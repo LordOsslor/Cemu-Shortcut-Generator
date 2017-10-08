@@ -154,8 +154,31 @@ namespace Shortcut_Generator
             a = a.Substring(GD.Length + 1, a.Length - GD.Length - 1);
             a = a.Substring(0, a.IndexOf('\\'));
             a = Regex.Match(a, @"\[([^)]*)\]").Groups[1].Value;
-            a = a.Replace("E01", "E");
-            a = a.Replace("P01", "E");
+            MessageBox.Show((a.Substring(Math.Max(0, a.Length - 4))).ToString());
+            if (a.Substring(Math.Max(0, a.Length - 2)) == "01")
+            {
+                MessageBox.Show("1");
+                a = a.Substring(0, a.Length - 2);
+                StringBuilder sb = new StringBuilder(a);
+                if (a.Substring(Math.Max(0, a.Length - 2)) == "01")
+                {
+                    sb[a.Length - 3] = 'E';
+                }
+                else
+                {
+                    sb[a.Length - 1] = 'E';
+                }
+                a = sb.ToString();
+            }
+            else
+            {
+                MessageBox.Show("2");
+                StringBuilder sb = new StringBuilder(a);
+                sb[a.Length - 3] = 'E';
+                a = sb.ToString();
+                a = a.Substring(0, a.Length - 2);
+            }
+            MessageBox.Show(a);
             return a;
         }
         private void MainWindow_MouseDown(object sender, MouseEventArgs e)

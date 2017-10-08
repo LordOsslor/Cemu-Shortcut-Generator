@@ -17,3 +17,4 @@ C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Release\Sh
 C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Release\Shortcut-Generator.application
 C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Release\Shortcut-Generator.exe
 C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Release\Shortcut-Generator.pdb
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Release\Shortcut-Generator.csprojResolveAssemblyReference.cache
