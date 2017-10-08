@@ -154,6 +154,7 @@ namespace Shortcut_Generator
             a = a.Substring(GD.Length + 1, a.Length - GD.Length - 1);
             a = a.Substring(0, a.IndexOf('\\'));
             a = Regex.Match(a, @"\[([^)]*)\]").Groups[1].Value;
+            a = a.Replace("E01", "E");
             a = a.Replace("P01", "E");
             return a;
         }

@@ -77,7 +77,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Logo.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -102,6 +102,11 @@
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Setup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,14 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -143,22 +143,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Shortcut-Generator_1_TemporaryKey.pfx" />
-    <None Include="X.png" />
+    <None Include="Resources\X.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="X_click.png" />
+    <None Include="Resources\X_click.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="minus.png" />
+    <None Include="Resources\minus.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="minus_click.png" />
+    <None Include="Resources\minus_click.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="minus_hover.png" />
+    <None Include="Resources\minus_hover.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="X_hover.png" />
+    <None Include="Resources\X_hover.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -183,15 +183,11 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="loading.png" />
+    <None Include="Resources\X.bmp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

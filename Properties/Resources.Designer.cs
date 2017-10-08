@@ -61,21 +61,11 @@ namespace Shortcut_Generator.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap loading {
-            get {
-                object obj = ResourceManager.GetObject("loading", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
         /// </summary>
-        internal static System.Drawing.Icon Logo1 {
+        internal static System.Drawing.Icon Logo {
             get {
-                object obj = ResourceManager.GetObject("Logo1", resourceCulture);
+                object obj = ResourceManager.GetObject("Logo", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -136,6 +126,16 @@ namespace Shortcut_Generator.Properties {
         internal static System.Drawing.Bitmap X_hover {
             get {
                 object obj = ResourceManager.GetObject("X_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap X1 {
+            get {
+                object obj = ResourceManager.GetObject("X1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
