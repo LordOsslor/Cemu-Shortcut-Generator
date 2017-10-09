@@ -40,6 +40,7 @@ namespace Shortcut_Generator
             this.CheckAll = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.Back = new System.Windows.Forms.Button();
+            this.g = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.X)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minus)).BeginInit();
             this.SuspendLayout();
@@ -166,12 +167,24 @@ namespace Shortcut_Generator
             this.Back.UseVisualStyleBackColor = false;
             this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
+            // g
+            // 
+            this.g.AutoSize = true;
+            this.g.Location = new System.Drawing.Point(92, 310);
+            this.g.Margin = new System.Windows.Forms.Padding(2);
+            this.g.Name = "g";
+            this.g.Size = new System.Drawing.Size(99, 17);
+            this.g.TabIndex = 28;
+            this.g.Text = "Auto-Fullscreen";
+            this.g.UseVisualStyleBackColor = true;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(439, 338);
+            this.Controls.Add(this.g);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.CheckAll);
@@ -209,5 +222,6 @@ namespace Shortcut_Generator
         private Button CheckAll;
         private CheckBox checkBox1;
         private Button Back;
+        private CheckBox g;
     }
 }

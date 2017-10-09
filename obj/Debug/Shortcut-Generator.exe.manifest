@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Shortcut-Generator.exe" size="1126832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Shortcut-Generator.exe" size="1127856">
       <assemblyIdentity name="Shortcut-Generator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GIZf/8juJ7e7EbhWISzskhUPk8qFmZ9QMSNlIvhebD0=</dsig:DigestValue>
+        <dsig:DigestValue>W6sA8Gpv20FLLfIcnNCWUcGtQdS6Hp9QacS8Wcdv4I8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

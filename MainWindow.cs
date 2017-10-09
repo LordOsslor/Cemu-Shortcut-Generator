@@ -28,6 +28,7 @@ namespace Shortcut_Generator
         }
         public bool hold = false;
         Point CP;
+        List<string> NoIco = new List<string>();
         List<string> GamePaths = new List<string>();
         List<string> Games = new List<string>();
         List<string> SelectedGames = new List<string>();
@@ -105,7 +106,7 @@ namespace Shortcut_Generator
                     }
                     else
                     {
-                        MessageBox.Show("Icon for \"" + Game + "\" not found!");
+                        NoIco.Add(Game + " [" + GameID + "]\r\n");
                     }
                 }
                 else
@@ -122,8 +123,12 @@ namespace Shortcut_Generator
                     }
                 }
             }
-            shortcut.Arguments = "-g \"" + Gamepath + "\"";
+            string args = "-g \"" + Gamepath + "\"";
+            if (checkBox1.Checked)
+                args += " -f";
+            shortcut.Arguments = args;
             shortcut.Save();
+
             reset();
             //MainWindow_Load(new object(), new EventArgs());
         }
@@ -138,6 +143,11 @@ namespace Shortcut_Generator
             foreach (var item in SelectedGames)
             {
                 CreateShortcut(SD, CD, ToGameName(item), item, ToID(item), ID);
+            }
+            if (NoIco.Count > 0)
+            {
+                MessageBox.Show("Icons not found for:\r\n" + string.Join("", NoIco));
+                NoIco = new List<string>();
             }
         }
         private string ToGameName(string s)
@@ -172,11 +182,18 @@ namespace Shortcut_Generator
             }
             else
             {
-                //MessageBox.Show("2");
                 StringBuilder sb = new StringBuilder(a);
-                sb[a.Length - 3] = 'E';
-                a = sb.ToString();
-                a = a.Substring(0, a.Length - 2);
+                //sb[a.Length - 3] = 'E';
+                //a = sb.ToString();
+                try
+                {
+                    a = a.Substring(0, a.LastIndexOf('P'));
+                }
+                catch
+                {
+                    return "ERROR, for not Erupean games with strange ID-Thingys\r\n--(like [BRX(E/P/A)NV]; not ending on 01 or 0101), not supported quite yet!\r\n--Also, dont put .rpx/.iso/.wud/.wad files in folders, without []!";
+                }
+                a += "E";
             }
             //MessageBox.Show(a);
             return a;
@@ -274,9 +291,12 @@ namespace Shortcut_Generator
 
         private void CheckAll_Click(object sender, EventArgs e)
         {
+            bool b = true;
+            if (CheckGames.CheckedItems.Count == Games.Count)
+                b = false;
             for (int i = 0; i < CheckGames.Items.Count; i++)
             {
-                CheckGames.SetItemChecked(i, true);
+                CheckGames.SetItemChecked(i, b);
             }
         }
         private void Back_Click(object sender, EventArgs e)

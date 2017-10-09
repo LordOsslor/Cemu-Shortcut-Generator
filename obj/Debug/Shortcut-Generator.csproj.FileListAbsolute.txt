@@ -1,0 +1,17 @@
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\bin\Debug\Shortcut-Generator.exe.config
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\bin\Debug\Shortcut-Generator.exe.manifest
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\bin\Debug\Shortcut-Generator.application
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\bin\Debug\Shortcut-Generator.exe
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\bin\Debug\Shortcut-Generator.pdb
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut-Generator.csproj.ResolveComReference.cache
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut_Generator.MainWindow.resources
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut_Generator.Setup.resources
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut_Generator.Properties.Resources.resources
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut-Generator.csproj.GenerateResource.Cache
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut-Generator.csproj.CoreCompileInputs.cache
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut-Generator.TrustInfo.xml
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut-Generator.exe.manifest
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut-Generator.application
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut-Generator.exe
+C:\Users\Oskar\source\repos\Shortcut Generator\Shortcut-Generator\obj\Debug\Shortcut-Generator.pdb
