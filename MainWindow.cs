@@ -92,7 +92,6 @@ namespace Shortcut_Generator
 
             IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutAddress);
             shortcut.Description = "Created by Shortcut-Generator for CEMU";
-            shortcut.Hotkey = "Ctrl+Shift+N";
             shortcut.TargetPath = CMpath + @"\cemu.exe";
             shortcut.WorkingDirectory = CMpath;
             if (checkBox1.Checked)
@@ -191,7 +190,7 @@ namespace Shortcut_Generator
                 }
                 catch
                 {
-                    return "ERROR, for not Erupean games with strange ID-Thingys\r\n--(like [BRX(E/P/A)NV]; not ending on 01 or 0101), not supported quite yet!\r\n--Also, dont put .rpx/.iso/.wud/.wad files in folders, without []!";
+                    return "ERROR, for not European games with strange ID-Thingys\r\n--(like [BRX(E/P/A)NV]; not ending on 01 or 0101), not supported quite yet!\r\n--Also, dont put .rpx/.iso/.wud/.wad files in folders, without []!";
                 }
                 a += "E";
             }
